@@ -31,3 +31,23 @@ These messages are formatted to be legible to ICST objects. `multichannel-output
 You will need to have `multichannel-output.maxpat` open to send audio out to speakers. 
 
 Note the presets for different "standard" channel configurations. You can also edit the patch and store your own, for instance in the `coll` object. 
+
+## max synthesis patches
+[forthcoming] 
+
+## p5js / maxmsp connections
+To use these examples, you need to Node.js installed (see above). 
+
+### getting started pt. 1 OSC bridge: 
+1. open terminal in MS visual code (ctrl+j).
+2. navigate to the directory `p5-to-max` (e.g. `cd /p5-to-max`).
+3. run the OSC bridge program by typing `node bridge.js`. If nothing happens, it's working. you will see the text `connected` when you open a sketch later.
+
+### getting started pt. 2 P5*js
+1. run the `index.html` file inside `p5-to-max` by right clicking in MS visual code and selecting "run live server". The example sketch should pop up in your browser. 
+2. You should see a `connected` message back in your terminal inside your MS visual code.
+
+### getting started pt. 3 maxmsp
+1. open `p5-node-bridge.maxpat` and `multichannel-output.maxpat`. The first will receive location messages from p5 via the OSC bridge and pass them over to the multichannel output patcher.
+2. (note the OSC code inside the sketch. You can study other examples here: https://github.com/genekogan/p5js-osc/blob/master/Applications.md)
+3. So far, there is no sound source. Code up your own that sends audio to the `multichannel-output.maxpat` via `send~`. 
