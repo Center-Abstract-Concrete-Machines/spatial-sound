@@ -1,0 +1,15 @@
+function msg_int(v)
+{
+	
+if (v == 4){
+  outlet(0,-45);	
+  }
+else if (v == 2){
+  outlet(0,-90);
+}
+else {
+
+outlet(0,0)
+}
+
+}
