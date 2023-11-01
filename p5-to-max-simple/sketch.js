@@ -3,6 +3,8 @@ var socket;
 var isConnected;
 
 let squares = [];
+let x = 0;
+let y = 200;
 
 function setup() {
   createCanvas(400, 400);
@@ -11,13 +13,18 @@ function setup() {
 
 function draw() {
   background(220);
-  let x = mouseX;
-  let y = mouseY;
+
   ellipse(x, y, 40, 40);
   sendOsc("message", [0, x, y]); /// index number, x, y
 
-  ellipse(100, 100, 40, 40);
-  sendOsc("message", [1, 200, 200]); /// index number, x, y
+  x++;
+  if (x > width) {
+    x = 0;
+  }
+  y += 2;
+  if (y > width) {
+    y = 0;
+  }
 }
 
 function sendOsc(address, value) {
