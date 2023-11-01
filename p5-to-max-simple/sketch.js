@@ -25,6 +25,8 @@ function draw() {
   if (y > width) {
     y = 0;
   }
+
+  sendOsc("message", [1, 100, 100]); /// index number, x, y
 }
 
 function sendOsc(address, value) {
