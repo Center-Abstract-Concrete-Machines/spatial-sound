@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 364.0, 197.0, 150.0, 29.0 ],
+					"text" : "find bucket patch with randomizer --- it was for video"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 509.0, 163.0, 42.0, 20.0 ],
+					"text" : "urn-jb 6"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
@@ -47,9 +71,9 @@
 								"filename" : "Varsha_jems.wav",
 								"filekind" : "audiofile",
 								"id" : "u971012222",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -83,9 +107,9 @@
 								"filename" : "Jen_whitelight.wav",
 								"filekind" : "audiofile",
 								"id" : "u954012068",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-									"loop" : 0
+									"loop" : 1
 								}
 
 							}
@@ -701,6 +725,13 @@
 				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
 				"patcherrelativepath" : "../../../../../Max 8/Patches/optimization_saloon_FINAL",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "urn-jb.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/install_sigflo17/patchers",
+				"patcherrelativepath" : "../../../../../Max 8/Projects/install_sigflo17/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
