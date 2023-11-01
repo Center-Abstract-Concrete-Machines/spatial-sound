@@ -40,25 +40,61 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-9",
-					"linecount" : 2,
-					"maxclass" : "comment",
+					"id" : "obj-26",
+					"maxclass" : "number",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 364.0, 197.0, 150.0, 29.0 ],
-					"text" : "find bucket patch with randomizer --- it was for video"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 350.400005221366882, 121.399997711181641, 50.0, 20.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-17",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 286.199997544288635, 121.399997711181641, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 286.199997544288635, 157.399997651576996, 59.0, 20.0 ],
+					"text" : "metro 5000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 509.0, 163.0, 42.0, 20.0 ],
-					"text" : "urn-jb 6"
+					"patching_rect" : [ 286.199997544288635, 189.599997580051422, 48.0, 20.0 ],
+					"text" : "urn-jb 16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.999997228384018, 228.0, 85.400000631809235, 20.0 ],
+					"text" : "pak 1 i i"
 				}
 
 			}
@@ -71,9 +107,9 @@
 								"filename" : "Varsha_jems.wav",
 								"filekind" : "audiofile",
 								"id" : "u971012222",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 1
+
 								}
 
 							}
@@ -91,7 +127,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 825.0, 279.0, 150.0, 30.0 ],
+					"patching_rect" : [ 780.0, 332.5, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -107,9 +143,9 @@
 								"filename" : "Jen_whitelight.wav",
 								"filekind" : "audiofile",
 								"id" : "u954012068",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 1
+									"loop" : 0
 								}
 
 							}
@@ -127,7 +163,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 619.0, 279.0, 150.0, 30.0 ],
+					"patching_rect" : [ 562.0, 332.5, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -141,7 +177,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.5, 212.0, 17.0, 85.0 ],
+					"patching_rect" : [ 11.5, 354.0, 17.0, 85.0 ],
 					"text" : "o\nu\nt\np\nu\nt\ns"
 				}
 
@@ -152,7 +188,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 86.0, 150.0, 18.0 ],
+					"patching_rect" : [ 36.0, 228.0, 150.0, 18.0 ],
 					"text" : "inputs"
 				}
 
@@ -199,7 +235,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 495.0, 305.0, 50.0, 20.0 ]
+					"patching_rect" : [ 408.0, 319.5, 50.0, 20.0 ]
 				}
 
 			}
@@ -210,7 +246,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 502.0, 341.0, 57.0, 20.0 ],
+					"patching_rect" : [ 408.0, 350.5, 57.0, 20.0 ],
 					"text" : "cycle~ 100"
 				}
 
@@ -225,7 +261,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 860.0, 382.0, 48.0, 136.0 ],
+					"patching_rect" : [ 780.0, 380.5, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[3]",
@@ -252,7 +288,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 634.0, 378.0, 48.0, 136.0 ],
+					"patching_rect" : [ 562.0, 380.5, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[2]",
@@ -279,7 +315,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 511.0, 382.0, 48.0, 136.0 ],
+					"patching_rect" : [ 408.0, 380.5, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -303,7 +339,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 297.0, 337.0, 33.0, 20.0 ],
+					"patching_rect" : [ 189.399999999999977, 340.5, 33.0, 20.0 ],
 					"text" : "pink~"
 				}
 
@@ -318,7 +354,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 303.0, 391.0, 48.0, 136.0 ],
+					"patching_rect" : [ 189.399999999999977, 380.5, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -344,7 +380,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 83.0, 106.0, 117.0, 401.0 ],
+					"patching_rect" : [ 32.0, 248.0, 117.0, 401.0 ],
 					"rows" : 16
 				}
 
@@ -641,6 +677,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -656,6 +699,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 41.5, 660.0, 159.0, 660.0, 159.0, 531.0, 198.899999999999977, 531.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -671,6 +715,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -695,6 +746,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-13" : [ "live.gain~[2]", "live.gain~", 0 ],
@@ -716,21 +774,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "Jen_whitelight.wav",
 				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
-				"patcherrelativepath" : "../../../../../Max 8/Patches/optimization_saloon_FINAL",
+				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Varsha_jems.wav",
 				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
-				"patcherrelativepath" : "../../../../../Max 8/Patches/optimization_saloon_FINAL",
+				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "urn-jb.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/install_sigflo17/patchers",
-				"patcherrelativepath" : "../../../../../Max 8/Projects/install_sigflo17/patchers",
+				"patcherrelativepath" : "../../../Max 8/Projects/install_sigflo17/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
