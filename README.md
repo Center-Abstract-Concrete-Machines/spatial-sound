@@ -8,8 +8,14 @@ spatial sound starter patches for TriTriangle workshop November 2023. Prepared b
 - For p5*js OSC examples, you may find it handy to run the bridge server through [Microsoft Visual Studio]([url](https://visualstudio.microsoft.com/)). 
 
 ## Library Dependencies 
-
-- ICST ambisonic tool kit for Max/MSP. This should be installed via the [Max Package Manager]([url](https://docs.cycling74.com/max8/vignettes/package_manager)).  
+### MAX/MSP packages
+These should be installed via the via the [Max Package Manager]([url](https://docs.cycling74.com/max8/vignettes/package_manager)), unless otherwise specified.
+- ICST ambisonic tool kit
+- CNMAT Externals for Max/MSP. A collection of useful externals ranging from utilities to synths from the folks at CNMAT in Berkeley.
+- CNMAT ODOT. A great OSC handling library for Max/MSP.
+- Ease by Cycling74 for Max/MSP. The [ease.xfade~] object might be of use.
+- Jasch Objects for Max/MSP. Mostly formulas and functions, has a nice cartesian <> polar coodinate conversion tool set.
+- Petra by circuit.music.labs the granular synth in Kim's demo patch.
 
 ## Included Dependencies
 
