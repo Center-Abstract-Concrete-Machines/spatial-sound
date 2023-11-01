@@ -40,25 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"linecount" : 5,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ -11.333333671092987, 229.0, 50.0, 77.0 ],
-					"text" : "aed 24 34.734898 0. -2.526137 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.666667401790619, 78.333335667848587, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 132.958740000000034, 92.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1683,15 +1672,6 @@
 					"color" : [ 0.6, 0.54902, 0.501961, 1.0 ],
 					"destination" : [ "obj-28", 0 ],
 					"midpoints" : [ 76.458740000000034, 337.646728999999993, 30.458740000000034, 337.646728999999993 ],
-					"order" : 1,
-					"source" : [ "obj-113", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"order" : 0,
 					"source" : [ "obj-113", 0 ]
 				}
 
