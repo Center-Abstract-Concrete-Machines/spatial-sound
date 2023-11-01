@@ -4,8 +4,6 @@ var isConnected;
 
 let squares = [];
 
-var x, y;
-
 function setup() {
   createCanvas(400, 400);
   for (let i = 0; i < 24; i++) {
