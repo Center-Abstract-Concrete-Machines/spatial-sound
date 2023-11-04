@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 56.0, 93.0, 1338.0, 913.0 ],
+		"rect" : [ 54.0, 161.0, 1338.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 263.0, 316.0, 121.0, 20.0 ],
-					"text" : "2 12 0."
+					"text" : "1 12 0.208889"
 				}
 
 			}
@@ -151,7 +151,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.274999999999864, 243.281009018421173, 279.0, 74.0 ],
+					"patching_rect" : [ 380.274999999999864, 243.281009018421173, 279.0, 75.0 ],
 					"text" : "64 voices because 16 * 4 \nBecause maxmsp makes little sense, you need to add a row (of 4) to address all the remaining positions. so 68 in total.\n\nif u add more voices u gotta do some more math. (don't forget to change the math inside poly~ poly hates u <3"
 				}
 
@@ -164,7 +164,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 365.0, 221.281009018421173, 156.0, 20.0 ],
-					"text" : "poly~ poly-matrix-ctrl @voices 68"
+					"text" : "poly~ poly-matrix-ctrl @voices 64"
 				}
 
 			}
@@ -187,7 +187,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.0, 103.599997580051422, 150.0, 51.0 ],
+					"patching_rect" : [ 36.0, 103.599997580051422, 150.0, 52.0 ],
 					"text" : " polyphonic voicing for each instance of randomness going into matrix control, because crossfading sounds good"
 				}
 
@@ -248,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 366.666677594184875, 138.599997580051422, 48.0, 20.0 ],
-					"text" : "urn-jb 68"
+					"text" : "urn-jb 64"
 				}
 
 			}
@@ -333,7 +333,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.5, 354.0, 17.0, 85.0 ],
+					"patching_rect" : [ 11.5, 354.0, 17.0, 87.0 ],
 					"text" : "o\nu\nt\np\nu\nt\ns"
 				}
 
@@ -567,18 +567,6 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 189.399999999999977, 574.0, 695.0, 23.0 ],
 					"text" : "matrix~ 4 16"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 558.5, 206.599997580051422, 69.0, 20.0 ],
-					"text" : "setdomain $1"
 				}
 
 			}
@@ -914,13 +902,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 45.5, 660.0, 159.0, 660.0, 159.0, 531.0, 198.899999999999977, 531.0 ],
 					"source" : [ "obj-4", 0 ]
@@ -950,7 +931,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -1024,30 +1005,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Jen_whitelight.wav",
-				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
-				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Varsha_jems.wav",
-				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
-				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "poly-matrix-ctrl.maxpat",
-				"bootpath" : "~/Documents/GitHub/spatial-sound/hard_patching_router",
+				"bootpath" : "C:/github/spatial-audio/hard_patching_router",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "urn-jb.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/install_sigflo17/patchers",
-				"patcherrelativepath" : "../../../Max 8/Projects/install_sigflo17/patchers",
+				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/random_with_no_repeat",
+				"patcherrelativepath" : "../../../Users/garre/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/random_with_no_repeat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
