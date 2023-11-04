@@ -5,7 +5,7 @@ var isConnected;
 let noiseScale = 100;
 
 let particles = [];
-let numParticles = 10;
+let numParticles = 32;
 let font;
 let sz = 200;
 let spd = 0.1;
