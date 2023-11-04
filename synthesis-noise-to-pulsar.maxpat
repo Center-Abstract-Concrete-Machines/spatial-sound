@@ -310,8 +310,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 347.0, 329.5, 181.0, 22.0 ],
-					"text" : "vexpr ($f1*400.) @scalarmode 1"
+					"patching_rect" : [ 347.0, 329.5, 212.0, 22.0 ],
+					"text" : "vexpr ($f1*400.)+200. @scalarmode 1"
 				}
 
 			}
