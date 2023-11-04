@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 346.0, 250.0, 1063.0, 838.0 ],
+		"rect" : [ 287.0, 100.0, 854.0, 776.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 263.0, 316.0, 121.0, 20.0 ],
+					"text" : "1 10 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 239.0, 410.0, 167.0, 20.0 ],
+					"text" : "1. 5. 0.915895"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 461.899999999999977, 76.399997711181641, 150.0, 29.0 ],
+					"text" : "changes frequency and thus, density of events"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,8 +92,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 158.0, 150.0, 18.0 ],
-					"text" : "change duration of envelope"
+					"patching_rect" : [ 618.0, 181.0, 150.0, 18.0 ],
+					"text" : "changes duration of envelope"
 				}
 
 			}
@@ -103,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 366.666677594184875, 187.368427753448486, 59.0, 20.0 ],
+					"patching_rect" : [ 365.0, 194.368427753448486, 59.0, 20.0 ],
 					"text" : "target $1, b"
 				}
 
@@ -111,11 +147,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 880.666692912578583, 294.666675448417664, 150.0, 18.0 ],
-					"text" : "64 voices because 16 * 4"
+					"patching_rect" : [ 380.274999999999864, 243.281009018421173, 279.0, 74.0 ],
+					"text" : "64 voices because 16 * 4 \nBecause maxmsp makes little sense, you need to add a row (of 4) to address all the remaining positions. so 68 in total.\n\nif u add more voices u gotta do some more math. (don't forget to change the math inside poly~ poly hates u <3"
 				}
 
 			}
@@ -123,11 +160,11 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 366.666677594184875, 231.333333432674408, 156.0, 20.0 ],
-					"text" : "poly~ poly-matrix-ctrl @voices 64"
+					"patching_rect" : [ 365.0, 221.281009018421173, 156.0, 20.0 ],
+					"text" : "poly~ poly-matrix-ctrl @voices 68"
 				}
 
 			}
@@ -146,24 +183,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-93",
-					"linecount" : 7,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.578951358795166, 64.599997580051422, 150.0, 98.0 ],
-					"text" : "currently trying to add polyphonic voicing for each instance of randomness going into matrix control, because crossfading sounds good. on the strugglebus with this. Need to figure out poly/ poly~\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-73",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 294.421060800552368, 294.281009018421173, 80.578948497772217, 20.0 ],
-					"text" : "poly 16 1"
+					"patching_rect" : [ 36.0, 103.599997580051422, 150.0, 51.0 ],
+					"text" : " polyphonic voicing for each instance of randomness going into matrix control, because crossfading sounds good"
 				}
 
 			}
@@ -187,7 +212,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 406.666677594184875, 76.399997711181641, 50.0, 20.0 ]
+					"patching_rect" : [ 411.5, 85.399997711181641, 50.0, 20.0 ]
 				}
 
 			}
@@ -223,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 366.666677594184875, 138.599997580051422, 48.0, 20.0 ],
-					"text" : "urn-jb 63"
+					"text" : "urn-jb 68"
 				}
 
 			}
@@ -237,9 +262,9 @@
 								"filekind" : "audiofile",
 								"id" : "u971012222",
 								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -274,9 +299,9 @@
 								"filekind" : "audiofile",
 								"id" : "u954012068",
 								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-									"loop" : 0
+									"loop" : 1
 								}
 
 							}
@@ -308,7 +333,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.5, 354.0, 17.0, 87.0 ],
+					"patching_rect" : [ 11.5, 354.0, 17.0, 85.0 ],
 					"text" : "o\nu\nt\np\nu\nt\ns"
 				}
 
@@ -859,6 +884,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 1 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -990,16 +1024,30 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Jen_whitelight.wav",
+				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
+				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Varsha_jems.wav",
+				"bootpath" : "~/Documents/Max 8/Patches/optimization_saloon_FINAL",
+				"patcherrelativepath" : "../../../Max 8/Patches/optimization_saloon_FINAL",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "poly-matrix-ctrl.maxpat",
-				"bootpath" : "C:/GitHub/spatial-sound",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/GitHub/spatial-sound/hard_patching_router",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "urn-jb.maxpat",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/random_with_no_repeat",
-				"patcherrelativepath" : "../../../Users/galajo/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/random_with_no_repeat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
+				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
