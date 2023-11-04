@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 287.0, 100.0, 854.0, 776.0 ],
+		"rect" : [ 56.0, 93.0, 1338.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 263.0, 316.0, 121.0, 20.0 ],
-					"text" : "1 10 0."
+					"text" : "2 12 0."
 				}
 
 			}
@@ -378,8 +378,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 16,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.399999999999977, 649.0, 652.749999999999886, 20.0 ],
-					"text" : "dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16"
+					"patching_rect" : [ 189.399999999999977, 649.0, 652.749999999999773, 20.0 ],
+					"text" : "dac~ 3 4 5 6 7 8 9 10 23 24 25 26 27 28 29 30"
 				}
 
 			}
@@ -1046,8 +1046,8 @@
 			}
 , 			{
 				"name" : "urn-jb.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
-				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
+				"bootpath" : "~/Documents/Max 8/Projects/install_sigflo17/patchers",
+				"patcherrelativepath" : "../../../Max 8/Projects/install_sigflo17/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
